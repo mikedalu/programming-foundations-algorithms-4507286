@@ -4,7 +4,19 @@
 
 
 def gcd(a, b):
-    pass
+    # while b != 0:
+    #     if a % b == 0:
+    #         return b
+    #     else:
+    #         r = a % b
+    #         a = b
+    #         b = r
+    if a % b == 0:
+        return b
+    r = a % b;
+    a = b
+    b = r
+    return gcd(a, b)
 
 
 # try out the function with a few examples
